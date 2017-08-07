@@ -1,6 +1,6 @@
 # Devslopes RxSwift Course: Source Code #
 
-[IMAGE GOES HERE]
+![http://i.imgur.com/VOmzs4b.png](http://i.imgur.com/VOmzs4b.png)
 
 This repository accompanies the RxSwift course from Devslopes available in the 'Learn to Code' app available on the iOS, macOS, and tvOS App Store.
 
