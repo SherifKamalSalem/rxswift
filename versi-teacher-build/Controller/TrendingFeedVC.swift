@@ -14,7 +14,7 @@ class TrendingFeedVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    private let refreshControl = UIRefreshControl()
+    let refreshControl = UIRefreshControl()
     let dataSource = PublishSubject<[Repo]>()
     var disposeBag = DisposeBag()
     
@@ -40,9 +40,9 @@ class TrendingFeedVC: UIViewController {
     
     @objc func manualRefresh() {
         if let refreshControl = self.tableView.refreshControl {
-            self.tableView.setContentOffset(CGPoint(x: 0, y: -refreshControl.frame.height), animated: true)
-            self.tableView.refreshControl?.beginRefreshing()
-            self.tableView.refreshControl?.sendActions(for: .valueChanged)
+            tableView.setContentOffset(CGPoint(x: 0, y: -refreshControl.frame.height), animated: true)
+            tableView.refreshControl?.beginRefreshing()
+            tableView.refreshControl?.sendActions(for: .valueChanged)
         }
     }
 }

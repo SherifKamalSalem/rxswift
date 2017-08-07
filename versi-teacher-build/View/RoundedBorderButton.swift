@@ -10,10 +10,10 @@ import UIKit
 
 class RoundedBorderButton: UIButton {
     override func awakeFromNib() {
-        self.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
-        self.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        self.layer.borderWidth = 3
-        self.layer.cornerRadius = self.frame.height / 2
         super.awakeFromNib()
+        backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
+        layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        layer.borderWidth = 3
+        layer.cornerRadius = self.frame.height / 2
     }
 }

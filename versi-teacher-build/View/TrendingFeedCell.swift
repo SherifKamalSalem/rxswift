@@ -22,17 +22,17 @@ class TrendingFeedCell: UITableViewCell {
     var repoUrl: String?
     
     func configureCell(repo: Repo) {
-        self.repoImageView.image = repo.image
-        self.repoNameLbl.text = repo.name
-        self.repoDescLbl.text = repo.description
-        self.numberOfDownloadsLbl.text = String(describing: repo.numberOfDownloads)
-        self.languageLbl.text = repo.language
-        self.contributorsLbl.text = String(describing: repo.numberOfContributors)
-        self.repoUrl = repo.url
+        repoImageView.image = repo.image
+        repoNameLbl.text = repo.name
+        repoDescLbl.text = repo.description
+        numberOfDownloadsLbl.text = String(describing: repo.numberOfDownloads)
+        languageLbl.text = repo.language
+        contributorsLbl.text = String(describing: repo.numberOfContributors)
+        repoUrl = repo.url
     }
     
     override func layoutSubviews() {
-        self.backView.layer.cornerRadius = 15
+        backView.layer.cornerRadius = 15
     }
         
     @IBAction func viewReadmeBtnWasPressed(_ sender: UITableViewCell) {

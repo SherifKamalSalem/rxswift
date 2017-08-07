@@ -9,49 +9,21 @@
 import UIKit
 
 class Repo {
-    private var _image: UIImage
-    private var _name: String
-    private var _description: String
-    private var _language: String
-    private var _numberOfDownloads: Int
-    private var _numberOfContributors: Int
-    private var _url: String
-    
-    var image: UIImage {
-        return _image
-    }
-    
-    var name: String {
-        return _name
-    }
-    
-    var description: String {
-        return _description
-    }
-
-    var language: String {
-        return _language
-    }
-
-    var numberOfDownloads: Int {
-        return _numberOfDownloads
-    }
-
-    var numberOfContributors: Int {
-        return _numberOfContributors
-    }
-    
-    var url: String {
-        return _url
-    }
+    public private(set) var image: UIImage
+    public private(set) var name: String
+    public private(set) var description: String
+    public private(set) var language: String
+    public private(set) var numberOfDownloads: Int
+    public private(set) var numberOfContributors: Int
+    public private(set) var url: String
 
     init(image: UIImage, name: String, description: String, language: String, numberOfDownloads: Int, numberOfContributors: Int, url: String) {
-        self._image = image
-        self._name = name
-        self._description = description
-        self._language = language
-        self._numberOfDownloads = numberOfDownloads
-        self._numberOfContributors = numberOfContributors
-        self._url = url
+        self.image = image
+        self.name = name
+        self.description = description
+        self.language = language
+        self.numberOfDownloads = numberOfDownloads
+        self.numberOfContributors = numberOfContributors
+        self.url = url
     }
 }

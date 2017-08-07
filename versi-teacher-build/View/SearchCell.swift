@@ -20,15 +20,15 @@ class SearchCell: UITableViewCell {
     var repoUrl: String?
     
     func configureCell(repo: Repo) {
-        self.repoUrl = repo.url
-        self.repoImageView.image = UIImage(named: "gitHubLogo")
-        self.repoNameLbl.text = repo.name
-        self.repoDescLbl.text = repo.description
-        self.repoDownloadsLbl.text = String(describing: repo.numberOfDownloads)
-        self.repoLanguageLbl.text = repo.language
+        repoUrl = repo.url
+        repoImageView.image = UIImage(named: "gitHubLogo")
+        repoNameLbl.text = repo.name
+        repoDescLbl.text = repo.description
+        repoDownloadsLbl.text = String(describing: repo.numberOfDownloads)
+        repoLanguageLbl.text = repo.language
     }
     
     override func layoutSubviews() {
-        self.backView.layer.cornerRadius = 15
+        backView.layer.cornerRadius = 15
     }
 }

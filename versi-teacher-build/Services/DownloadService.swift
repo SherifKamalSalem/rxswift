@@ -80,7 +80,7 @@ class DownloadService {
     }
     
     func downloadTrendingRepos(completion: @escaping (_ reposArray: [Repo]) -> ()) {
-        self.downloadTrendingReposDictArray { (trendingReposDictArray) in
+        downloadTrendingReposDictArray { (trendingReposDictArray) in
             var trendingReposArray = [Repo]()
             for dict in trendingReposDictArray {
                 self.downloadTrendingRepo(fromDictionary: dict, completion: { (returnedRepo) in
