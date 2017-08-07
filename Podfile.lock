@@ -1,0 +1,39 @@
+PODS:
+  - Alamofire (4.5.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
+  - RxCocoa (4.0.0-alpha.0):
+    - RxSwift (~> 4.0.0-alpha.0)
+  - RxSwift (4.0.0-alpha.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - RxCocoa (from `https://github.com/ReactiveX/RxSwift.git`, branch `swift4.0`)
+  - RxSwift (from `https://github.com/ReactiveX/RxSwift.git`, branch `swift4.0`)
+
+EXTERNAL SOURCES:
+  RxCocoa:
+    :branch: swift4.0
+    :git: https://github.com/ReactiveX/RxSwift.git
+  RxSwift:
+    :branch: swift4.0
+    :git: https://github.com/ReactiveX/RxSwift.git
+
+CHECKOUT OPTIONS:
+  RxCocoa:
+    :commit: 92dad1fb5682c7363d9488dbcfa1ff562a279aae
+    :git: https://github.com/ReactiveX/RxSwift.git
+  RxSwift:
+    :commit: 92dad1fb5682c7363d9488dbcfa1ff562a279aae
+    :git: https://github.com/ReactiveX/RxSwift.git
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
+  RxCocoa: d57cc4a5b88c5179b3ca7fe30d0ab0d928e886ff
+  RxSwift: 6946957e4e99243ea7c9bba38afa06b1363b0048
+
+PODFILE CHECKSUM: 2467cb95c68c8706af010c7a44f909f48e9a4b62
+
+COCOAPODS: 1.2.0
