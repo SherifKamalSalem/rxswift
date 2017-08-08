@@ -46,7 +46,8 @@ class DownloadService {
     
     func downloadImageFor(avatarUrl: String, completion: @escaping (_ image: UIImage) -> ()) {
         Alamofire.request(avatarUrl).responseImage { (imageResponse) in
-            completion(imageResponse.result.value!)
+            guard let image = imageResponse.result.value else { return }
+            completion(image)
         }
         
     }

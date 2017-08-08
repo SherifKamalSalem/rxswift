@@ -25,12 +25,14 @@ class SearchVC: UIViewController, UITextFieldDelegate {
             .rx
             .text
             .orEmpty
-            .debounce(0.3, scheduler: MainScheduler.instance)
+            .debounce(0.5, scheduler: MainScheduler.instance)
             .map { $0.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? "" }
             .flatMap { (query) -> Observable<[Repo]> in
             if query == "" {
+                self.tableView.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
                 return Observable<[Repo]>.just([])
             } else {
+                self.tableView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
                 let url = URL(string: searchUrl + query)
                 var searchRepos = [Repo]()
 
@@ -70,6 +72,7 @@ class SearchVC: UIViewController, UITextFieldDelegate {
 
 extension SearchVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        view.endEditing(true)
         guard let cell = tableView.cellForRow(at: indexPath) as? SearchCell else { return }
         self.presentSafariWebViewFor(url: cell.repoUrl!)
     }

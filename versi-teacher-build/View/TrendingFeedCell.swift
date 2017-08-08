@@ -33,6 +33,10 @@ class TrendingFeedCell: UITableViewCell {
     
     override func layoutSubviews() {
         backView.layer.cornerRadius = 15
+        backView.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        backView.layer.shadowOpacity = 0.25
+        backView.layer.shadowRadius = 5.0
+        backView.layer.shadowOffset = CGSize(width: 0, height: 0)
     }
         
     @IBAction func viewReadmeBtnWasPressed(_ sender: UITableViewCell) {

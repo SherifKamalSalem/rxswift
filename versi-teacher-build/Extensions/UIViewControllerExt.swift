@@ -11,7 +11,7 @@ import SafariServices
 
 extension UIViewController {
     func presentSafariWebViewFor(url: String) {
-        let repoUrl = URL(string: url + "/blob/master/README.md")
+        let repoUrl = URL(string: url + readmeSegment)
         let safariVC = SFSafariViewController(url: repoUrl!)
         present(safariVC, animated: true, completion: nil)
     }
