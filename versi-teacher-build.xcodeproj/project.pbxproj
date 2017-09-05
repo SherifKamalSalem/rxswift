@@ -17,7 +17,6 @@
 		71274C201F327A1C0089AB4B /* RoundedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71274C1F1F327A1C0089AB4B /* RoundedBorderButton.swift */; };
 		71274C221F327D290089AB4B /* TrendingFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71274C211F327D290089AB4B /* TrendingFeedCell.swift */; };
 		71274C241F327FB70089AB4B /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71274C231F327FB70089AB4B /* Repo.swift */; };
-		71BBD5B61F328A5D0095FDC3 /* ShadowStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BBD5B51F328A5D0095FDC3 /* ShadowStackView.swift */; };
 		71BBD5B81F328AB30095FDC3 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BBD5B71F328AB30095FDC3 /* UIButtonExt.swift */; };
 		71BBD5BA1F328CD30095FDC3 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BBD5B91F328CD30095FDC3 /* SearchVC.swift */; };
 		71CA5E0F1F328D9600048729 /* RoundedBorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CA5E0E1F328D9600048729 /* RoundedBorderTextField.swift */; };
@@ -41,7 +40,6 @@
 		71274C1F1F327A1C0089AB4B /* RoundedBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderButton.swift; sourceTree = "<group>"; };
 		71274C211F327D290089AB4B /* TrendingFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingFeedCell.swift; sourceTree = "<group>"; };
 		71274C231F327FB70089AB4B /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
-		71BBD5B51F328A5D0095FDC3 /* ShadowStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowStackView.swift; sourceTree = "<group>"; };
 		71BBD5B71F328AB30095FDC3 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
 		71BBD5B91F328CD30095FDC3 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		71CA5E0E1F328D9600048729 /* RoundedBorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderTextField.swift; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 			children = (
 				71274C1F1F327A1C0089AB4B /* RoundedBorderButton.swift */,
 				71274C211F327D290089AB4B /* TrendingFeedCell.swift */,
-				71BBD5B51F328A5D0095FDC3 /* ShadowStackView.swift */,
 				71CA5E0E1F328D9600048729 /* RoundedBorderTextField.swift */,
 				71CA5E101F32909600048729 /* SearchCell.swift */,
 			);
@@ -307,7 +304,6 @@
 				71274C1C1F32782A0089AB4B /* Constants.swift in Sources */,
 				71BBD5B81F328AB30095FDC3 /* UIButtonExt.swift in Sources */,
 				71CA5E1A1F3386DD00048729 /* UIViewControllerExt.swift in Sources */,
-				71BBD5B61F328A5D0095FDC3 /* ShadowStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
